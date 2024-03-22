@@ -42,7 +42,7 @@ const auth = (req, res, next) => {
         // User.findById(user._id)
       });
 
-      next();
+      next();//
     } catch (error) {
       res.status(400).send({ message: "authorization failed" });
     }
